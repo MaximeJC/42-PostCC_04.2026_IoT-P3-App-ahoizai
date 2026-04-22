@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: playground
-        image: wil42/playground #:v2 # de base, version 1 (tag sera remplace par newTag des overlays)
+        image: wil42/playground
         ports:
         - containerPort: 8888
