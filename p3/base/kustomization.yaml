@@ -1,0 +1,13 @@
+# kustomize = outil de kubectl pour le versionnage de l'application:
+# base = application
+# overlays = versions de l'application
+
+# Fichier listant les fichiers de base de l'application
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - deploy.yaml
+  - service.yaml
+  - ingress.yaml
